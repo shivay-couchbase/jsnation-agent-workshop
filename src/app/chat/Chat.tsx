@@ -132,6 +132,7 @@ import { NavLink, useNavigate } from "react-router";
 import { z } from "zod";
 
 import Agent from "../../ai/agent/Agent.ts";
+import AiSdkAgent from "../../ai/agent/AIAgentSDK.ts";
 import findSimilarFAQs from "../../ai/vectorSearch/findSimilarFAQs.ts";
 import { Category, Color, Size } from "../../store/products.ts";
 import usePageContext from "../../store/provider/pageContext/usePageContext.ts";
