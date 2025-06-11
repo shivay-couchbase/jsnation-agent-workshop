@@ -15,6 +15,7 @@ import React from "react";
 import { NavLink, useNavigate } from "react-router";
 import { z } from "zod";
 
+import Agent from "../../ai/agent/Agent.ts";
 import AiSdkAgent from "../../ai/agent/AiSdkAgent.ts";
 import findSimilarFAQs from "../../ai/vectorSearch/findSimilarFAQs.ts";
 import { Category, Color, Size } from "../../store/products.ts";
@@ -38,7 +39,9 @@ const Chat: React.FC = () => {
   >([]);
 
   const agent = React.useMemo(() => {
-    const agent = new AiSdkAgent();
+    // Use WebLLM if VITE_USE_WEBLLM is set to 'true', otherwise use Gemini
+    const useWebLLM = import.meta.env.VITE_USE_WEBLLM === 'true';
+    const agent = useWebLLM ? new Agent() : new AiSdkAgent();
 
     agent.addTool(
       "openProductOverview",
