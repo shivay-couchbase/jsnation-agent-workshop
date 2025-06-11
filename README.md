@@ -1,1 +1,1 @@
-# jsnation-agent-workshop
+# Webshop AI Agent

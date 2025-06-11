@@ -1,0 +1,67 @@
+{
+  "name": "webshop-ai-agent",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^1.2.11",
+    "@headlessui/react": "^2.2.1",
+    "@heroicons/react": "^2.2.0",
+    "@huggingface/transformers": "^3.4.2",
+    "@mlc-ai/web-llm": "^0.2.78",
+    "@tailwindcss/vite": "^4.1.4",
+    "ai": "^4.3.7",
+    "nuqs": "^2.4.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router": "^7.5.0",
+    "showdown": "^2.1.0",
+    "tailwindcss": "^4.1.4",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "@types/dom-speech-recognition": "^0.0.6",
+    "@types/node": "^22.14.1",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@types/showdown": "^2.0.6",
+    "@vitejs/plugin-react": "^4.4.0",
+    "dotenv": "^16.5.0",
+    "eslint": "^9.24.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.30.1",
+    "vite": "^6.2.6",
+    "vite-plugin-html-config": "^2.0.2"
+  },
+  "license": "MIT",
+  "prettier": {
+    "plugins": [
+      "@trivago/prettier-plugin-sort-imports",
+      "prettier-plugin-tailwindcss"
+    ],
+    "singleQuote": false,
+    "trailingComma": "es5",
+    "importOrder": [
+      "<THIRD_PARTY_MODULES>",
+      "^@theme/(.*)$",
+      "^@app/(.*)$",
+      "^@utils/(.*)$",
+      "^[./]"
+    ],
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true
+  }
+}
