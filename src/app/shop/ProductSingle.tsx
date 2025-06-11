@@ -22,7 +22,7 @@ import useCart from "../../store/provider/cart/useCart.ts";
 import CurrentPageContext from "../../store/provider/pageContext/CurrentPageContext.tsx";
 import { Button, Modal, RadioGroup } from "../../theme";
 import cn from "../../utils/classnames.ts";
-import objToXml from "../../utils/objToXml.ts";
+import objToXml from "../../utils/converter/objToXml.ts";
 
 const ProductSingle: React.FC<{
   product: Product;

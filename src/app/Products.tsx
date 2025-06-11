@@ -3,8 +3,8 @@ import React from "react";
 
 import { PRODUCTS } from "../store/products.ts";
 import CurrentPageContext from "../store/provider/pageContext/CurrentPageContext.tsx";
+import objToXml from "../utils/converter/objToXml.ts";
 import haveCommonElement from "../utils/haveCommonElement.ts";
-import objToXml from "../utils/objToXml.ts";
 import ProductFilter from "./shop/ProductFilter.tsx";
 import ProductOverview from "./shop/ProductOverview.tsx";
 import MainLayout from "./template/MainLayout.tsx";
