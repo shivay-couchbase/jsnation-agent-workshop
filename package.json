@@ -13,7 +13,7 @@
     "@ai-sdk/google": "^1.2.11",
     "@headlessui/react": "^2.2.1",
     "@heroicons/react": "^2.2.0",
-    "@huggingface/transformers": "^3.4.2",
+    "@huggingface/transformers": "3.4.0",
     "@mlc-ai/web-llm": "^0.2.78",
     "@tailwindcss/vite": "^4.1.4",
     "ai": "^4.3.7",

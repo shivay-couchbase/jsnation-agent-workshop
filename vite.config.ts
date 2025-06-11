@@ -20,7 +20,7 @@ export default defineConfig({
           },
         }
       : {}),
-    port: process.env.PORT ? parseInt(process.env.PORT) : 8080,
+    port: process.env.PORT ? parseInt(process.env.PORT) : 4444,
   },
   plugins: [
     react(),

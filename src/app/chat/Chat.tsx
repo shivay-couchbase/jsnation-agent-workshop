@@ -32,7 +32,7 @@ const Chat: React.FC = () => {
               return;
             }
             setThinking(true);
-            await new Promise((resolve) => window.setTimeout(resolve, 500));
+            await new Promise((resolve) => setTimeout(resolve, 1000));
             setResponse(prompt);
             setThinking(false);
           }}
@@ -44,7 +44,9 @@ const Chat: React.FC = () => {
                 <Loader size={4} /> thinking..
               </p>
             ) : (
-              <p>{response}</p>
+              <p className="font-light text-gray-700 [&>li]:ml-5 [&>ol]:my-2 [&>ol]:ml-4 [&>ol]:list-decimal [&>ul]:my-2 [&>ul]:ml-5 [&>ul]:list-disc">
+                {response}
+              </p>
             )}
           </div>
         )}
