@@ -11,8 +11,8 @@ import {
   
     public createConversation = (systemPrompt: string) => {
       const messages: Array<ChatCompletionMessageParam> = [
-        { role: "system", content:  },
-      ];systemPrompt
+        { role: "system", content: systemPrompt },
+      ];
   
       console.log("-- SYSTEM PROMPT --");
       console.log(systemPrompt);
